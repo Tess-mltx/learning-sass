@@ -1,0 +1,40 @@
+$primary-color: #BCE9FF;
+$secondary-color: #FFD7F6;
+$background-color: #02222B;
+$accent-primary-color: #0284c5;
+$accent-secondary-color: rgb(165, 19, 131);
+
+%btn-style-general{
+    width: 50%;
+    padding: 8rem 24rem 8rem 24rem;
+}
+
+
+
+body{
+    background-color: $background-color;
+    width: 90%;
+    margin: auto;
+}
+
+h1, h2, h3{
+    color: $secondary-color;
+}
+
+p {
+    color: $primary-color;
+}
+
+.card{
+    width: (1/3)*100%;
+    h3{
+        text-decoration: underline $primary-color;
+    }
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        color: $accent-color
+    }
+}
