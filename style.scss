@@ -1,6 +1,6 @@
-/*$primary-color: #BCE9FF;
-$secondary-color: #FFD7F6;
-$background-color: #02222B;
+/*primary-color: #BCE9FF;
+secondary-color: #FFD7F6;
+tertiary-color: #02222B;
 */
 
 $primary-dark: #64d3ff;
@@ -52,10 +52,20 @@ h2{
     color: $primary-dark;
 }
 
-.item{
+.btn-color, .btn-border{
+    @extend %btn-global-style;
+}
+.btn-color{
+    @extend %color-match-primary;
+}
+.btn-border{
+    border: 1px solid $primary-dark;
+}
 
+.item{
+    @extend %color-match-primary-container;
 }
 
 .card{
-
+    @extend %color-match-secondary-container;
 }
