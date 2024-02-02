@@ -1,0 +1,71 @@
+/*primary-color: #BCE9FF;
+secondary-color: #FFD7F6;
+tertiary-color: #02222B;
+*/
+
+$primary-dark: #64d3ff;
+$on-primary-dark: #003546;
+$primary-container-dark: #004d63;
+$on-primary-container-dark: #bce9ff;
+$secondary-dark: #feabf4;
+$on-secondary-dark: #541354;
+$secondary-container-dark: #6f2c6c;
+$on-secondary-container-dark: #ffd7f6;
+$background-dark: #191c1e;
+$on-background-dark: #e1e2e4;
+
+%color-match-primary{
+    background-color: $primary-dark;
+    color: $on-primary-dark;
+}
+%color-match-primary-container{
+    background-color: $primary-container-dark;
+    color: $on-primary-container-dark;
+}
+%color-match-secondary{
+    background-color: $secondary-dark;
+    color: $on-secondary-dark;
+}
+%color-match-secondary-container{
+    background-color: $secondary-container-dark;
+    color: $on-secondary-container-dark;
+}
+
+%btn-style-general{
+    width: 50%;
+    padding: 8px 24px 8px 24px;
+}
+%cards-items-style-global{
+    padding: 12px 36px 12px 36px;
+    margin: 20px 10px 20px 10px;
+}
+
+body{
+    background-color: $background-color;
+    width: 90%;
+    margin: auto;
+    background-color: $background-dark;
+    color: $on-background-dark;
+}
+
+h2{
+    color: $primary-dark;
+}
+
+.btn-color, .btn-border{
+    @extend %btn-global-style;
+}
+.btn-color{
+    @extend %color-match-primary;
+}
+.btn-border{
+    border: 1px solid $primary-dark;
+}
+
+.item{
+    @extend %color-match-primary-container;
+}
+
+.card{
+    @extend %color-match-secondary-container;
+}
